@@ -1,47 +1,34 @@
-import  java.time.LocalDate ;
+public class Etudiant extends Personne{
 
-LocalDate localdate = new  LocalDate .now ();
- classe  publique Etudiant  étend  Personne {
+private String tuteur;
+public static int etudiant;
+ public Etudiant(String prenom,String nom,String tuteur){
+    super( nom, prenom) ;
+    etudiant++;
+    id=etudiant;
 
-	 chaîne privée datenaiss;
-	 String tuteur privé ;
+    this.tuteur=tuteur;
 
-	public  Etudiant ( String  fullname ) {
+ }
+ public Etudiant(){
+    etudiant++;
+    id=etudiant;
+}
 
-	ça . nom complet = nom complet;
+public String getTuteur(){
+
+    return tuteur;
+}
+
+public String setTuteur(String tuteur){
+   
+    this.tuteur=tuteur;
+}
+
+@Override
+public String affiche(){
+    return super.affiche() +"Tuteur: "+tuteur;
+}
 
 }
-	public  String  getDateNaiss () {
 
-		return datenaiss;
-	}
-	public  String  setDateNaiss ( String  datenaiss ) {
-
-		ça . datenaiss = datenaiss;
-	}
-
-	public  String  getTuteur () {
-
-	return tuteur;
-	}
-
-	public  String  setTuteur ( String  tuteur ) {
-
-	ça . tuteur = tuteur;
-	}
-
-	
-	public  int  CalculDate () {
-
-		
-	}
-
-	
-	
-
-
-
-
-
-} 
-© 2020 GitHub, Inc.
